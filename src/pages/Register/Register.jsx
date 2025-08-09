@@ -49,8 +49,8 @@ const Register = () => {
 
     return (
         <div className="register" data-aos="fade-up">
-            <div className="container">
-                <form className="form-register" onSubmit={handleSubmit}>
+            <div className="container ">
+                <form className="form-register " onSubmit={handleSubmit}>
                     <div className="heading"><span>Register</span></div>
 
                     <input
