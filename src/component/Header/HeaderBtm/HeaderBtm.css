@@ -167,7 +167,7 @@
   }
 
   .nav-pages a {
-    font-size: 26px;
+    font-size: 20px;
     margin: 0 12px;
   }
 
@@ -186,6 +186,13 @@
   .category-btn {
     font-size: 14px;
   }
+  .nav-pages{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-right: 70px;
+}
 
   .category-links {
     width: 160px;
