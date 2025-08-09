@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 // Icons
 import { IoSearch } from "react-icons/io5";
-import { IoIosHeart } from "react-icons/io";
+import { FaRegHeart } from "react-icons/fa6";
 import { TiShoppingCart } from "react-icons/ti";
 
 // Style
@@ -24,9 +24,8 @@ const HeaderTOP = () => {
         navigate('/cart');
     };
 
-   
     const handleFavoriteClick = () => {
-        navigate('/favorite'); 
+        navigate('/favorite');
     };
 
     const handleSubmit = (e) => {
@@ -37,7 +36,7 @@ const HeaderTOP = () => {
     };
 
     return (
-        <section className='bg-white border pt-1 pb-1 shadow-lg header-top'>
+        <section className='bg-white border pt-2 pb-2 shadow-lg header-top'>
             <div className='container d-flex justify-content-between align-items-center'>
                 <Link to="/" className='logo'>
                     <img src="/img/logo.png" alt="Logo" />
@@ -58,21 +57,32 @@ const HeaderTOP = () => {
                 </form>
 
                 <div className="header-icons d-flex align-items-center gap-3">
+                    {/* Favorite Icon with badge */}
                     <div
-                        className="position-relative"
+                        className="position-relative icon"
                         style={{ cursor: 'pointer' }}
-                        onClick={handleFavoriteClick}  
+                        onClick={handleFavoriteClick}
                     >
-                        <IoIosHeart  size={24} />
+                        <FaRegHeart  size={24} />
                         {favorites.length > 0 && (
-                            <span >
+                            <span className="icon-badge">
                                 {favorites.length}
                             </span>
                         )}
                     </div>
-                    <div className="icon" onClick={handleCartClick} style={{ cursor: 'pointer' }}>
+
+                    {/* Cart Icon with badge */}
+                    <div
+                        className="position-relative icon"
+                        style={{ cursor: 'pointer' }}
+                        onClick={handleCartClick}
+                    >
                         <TiShoppingCart size={24} />
-                        {cart.length > 0 && <span>{cart.length}</span>}
+                        {cart.length > 0 && (
+                            <span className="icon-badge">
+                                {cart.length}
+                            </span>
+                        )}
                     </div>
                 </div>
             </div>
