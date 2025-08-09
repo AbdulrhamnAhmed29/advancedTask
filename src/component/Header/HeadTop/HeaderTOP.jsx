@@ -59,7 +59,7 @@ const HeaderTOP = () => {
 
                 <div className="header-icons d-flex align-items-center gap-3">
                     <div
-                        className="icon"
+                        className="position-relative"
                         style={{ cursor: 'pointer' }}
                         onClick={handleFavoriteClick}  
                     >

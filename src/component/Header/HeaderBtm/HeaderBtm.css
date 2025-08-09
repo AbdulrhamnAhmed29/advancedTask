@@ -118,7 +118,8 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-.nav-pages{
+
+.nav-pages {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,6 +156,7 @@
   font-size: 20px;
 }
 
+
 .active {
   background-color: rgba(0, 0, 7, 0.438);
   padding: 14px 7px;
@@ -186,15 +188,17 @@
   .category-btn {
     font-size: 14px;
   }
-  .nav-pages{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-right: 70px;
-}
+
+  .nav-pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 70px;
+  }
 
   .category-links {
     width: 160px;
   }
 }
+
