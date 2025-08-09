@@ -1,0 +1,134 @@
+.empty-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.cart-section {
+    padding: 150px 0 10px 0;
+
+}
+
+.cart-section .cart-content {
+    width: 100%;
+    margin: auto;
+    height: 550px;
+    padding: 0px 20px;
+    border: 1px solid var(--main-color);
+    box-shadow: 0 6px 10px rgb(0, 0, 0);
+    border-radius: 5px;
+    overflow-x: hidden;
+}
+
+.cart-section .cart-content h2 {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    font-style: italic;
+    color: var(--main-color);
+    padding: 20px;
+    text-align: start;
+    font-weight: 700;
+    border-bottom: 1px solid var(--main-color);
+    width: 100%;
+}
+
+
+.cart-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+    margin-bottom: 5px;
+
+}
+
+.cart-sell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 300px;
+}
+
+.cart-sell .name-price h4 {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.534);
+}
+
+.cart-sell .name-price p {
+    color: rgba(0, 0, 0, 0.658);
+    font-size: 15px;
+}
+
+.cart-sell .name-price .quantity button {
+    padding: 5px 10px;
+    margin: 4px;
+}
+
+.cart-sell .name-price .quantity span {
+    padding: 5px 10px;
+
+}
+
+
+.image-name img {
+    width: 100px;
+    padding-bottom: 10px;
+
+}
+
+.rabbish svg {
+    fill: var(--main-color);
+    font-size: 30px;
+}
+
+.total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    font-style: italic;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+    border-top:1px solid rgba(0, 0, 0, 0.075) ;
+    color: var(--main-color);
+
+}
+.total h4{
+    margin-bottom: 0;
+}
+
+.total p {
+    color: var(--main-color);
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.button button {
+    background-color: var(--main-color);
+    color: white;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    font-weight: 900;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 10px rgb(0, 0, 0);
+}
+
+.footer-cart {
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+    background-color: white;
+
+}

@@ -1,0 +1,15 @@
+.brand-intro {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.brand-intro h2 {
+    color: #222;
+    font-weight: bold;
+}
+
+.brand-intro p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+}

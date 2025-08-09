@@ -1,0 +1,9 @@
+.fav-product{
+    padding-top:150px ;
+}
+.fav-name{
+    color: var(--main-color);
+}
+.card-img-top img{
+width: 150px;
+}

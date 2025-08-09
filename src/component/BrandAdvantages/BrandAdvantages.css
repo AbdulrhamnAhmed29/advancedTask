@@ -1,0 +1,15 @@
+.brand-advantages {
+    background-color: #f9f9f9;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+}
+
+.brand-advantages h2 {
+    font-weight: 700;
+    color: #222;
+}
+
+.brand-advantages li {
+    font-size: 1.1rem;
+    color: #333;
+}

@@ -1,0 +1,15 @@
+.brand-vision {
+    background-color: #fff;
+    border-top: 2px solid #eee;
+}
+
+.brand-vision h2 {
+    color: #222;
+    font-weight: 700;
+}
+
+.brand-vision p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.7;
+}

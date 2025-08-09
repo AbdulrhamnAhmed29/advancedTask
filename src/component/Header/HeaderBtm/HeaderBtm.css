@@ -1,0 +1,198 @@
+.header-btm {
+    background-color: var(--main-color);
+    box-shadow: 0 4px 6px rgba(1, 39, 44, 0.486);
+    width: 100%;
+
+
+}
+
+.parent-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.category-nav {
+    width: 150px;
+    position: relative;
+}
+
+.category-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    color: white;
+    padding: 10px 0;
+
+}
+
+.category-btn p {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+}
+.icons-signin-user{
+  cursor: pointer;
+}
+
+
+
+/* Scroll داخلي */
+.dropdown-scroll {
+  max-height: 250px;
+  overflow-y: auto;
+  transition: max-height 0.4s ease-in-out;
+}
+.dropdown-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dropdown-scroll::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.dropdown-scroll::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 5px;
+}
+
+.dropdown-scroll::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+/* Smooth Fade + Slide */
+.custom-dropdown .dropdown-menu {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: block; 
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.custom-dropdown.show .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+.dropdown-scroll {
+  scroll-behavior: smooth;
+}
+
+
+
+.hidden {
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+}
+
+.appear {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.category-links a {
+    color: black;
+    font-size: 15px;
+    padding:10px 4px;
+    font-weight: 400;
+
+}
+
+::-webkit-scrollbar {
+    height: 3px;
+  width: 5px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff; /* خلفية المسار */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000bb; 
+  border-radius: 20px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* لما تحط الماوس عليه */
+}
+
+
+
+
+.icons-signin-user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.signin-icon svg {
+    fill: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.user-icon svg {
+    fill: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.nav-pages a {
+    font-size: 17px;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+
+}
+
+.active {
+    background-color: rgba(0, 0, 7, 0.438);
+    padding: 14px 7px;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .icons-signin-user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-pages a {
+        font-size: 15px;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+        margin: 5px;
+
+
+
+
+    }
+
+
+    .active {
+        background-color: rgba(6, 7, 73, 0.253);
+        padding: 14px 7px;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+@media (max-width: 500px) {
+  
+    .category-btn{
+        font-size: 14px;
+    }
+    .category-links {
+  
+        width: 160px;
+ 
+    }
+
+
+}

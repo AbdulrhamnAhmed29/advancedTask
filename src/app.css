@@ -1,0 +1,8 @@
+.notfound {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    padding-top: 200px;
+    color: var(--main-color);
+    font-style: italic;
+}

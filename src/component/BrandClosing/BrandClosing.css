@@ -1,0 +1,16 @@
+.brand-closing {
+    background-color: #f8f9fa;
+}
+
+.brand-closing h2 {
+    font-weight: bold;
+    color: #000;
+}
+
+.brand-closing .closing-text {
+    font-size: 1.1rem;
+    color: #000;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
